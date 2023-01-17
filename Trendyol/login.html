@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Sayfası</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--FonAwesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  
+    <script src="https://kit.fontawesome.com/74469942f9.js" crossorigin="anonymous"></script>
+<style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+body, html{
+    width: 100%;
+}
+
+.navbar {
+    height: 120px;
+    width: 80%;
+    margin-left: 10%;
+}
+.navbar-brand{
+    font-size: x-large;
+    font-weight: bolder;
+    
+}
+.icon{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    cursor: pointer;
+    color: black !important;
+}
+.icon li {
+    margin: 0 10px;
+}
+
+.icon-text {
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+  }
+  .icon li a{
+    text-decoration: none;
+    color: black;
+  }
+.basket-count {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 5px;
+}
+
+.basket-container {
+    display: flex;
+    align-items: center;
+}
+/*Kategoriler*/
+.wrapper{
+    width: 100%;
+}
+
+.mega-menu{
+    width: 80px;
+    height: 60px;
+}
+
+.mega-menu ul{
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    text-align: center;
+    position: absolute;
+}
+.mega-menu ul li{
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0. 15;
+}
+.mega-menu ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+.mega-menu ul li .sub-menu{
+    position: absolute;
+    background: #2c2c2c;
+    width: 100%;
+    left: 0;
+    top: 24px;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 24px;
+    visibility: hidden;
+
+}
+.mega-menu ul li:hover {
+    background: #2c2c2c;
+    color: #ca914c;
+}
+.mega-menu ul li a:hover{
+    color: #ca914c;
+}
+.mega-menu ul li:hover .sub-menu{
+    z-index: 1;
+    visibility: visible;
+}
+
+.mega-menu ul li .sub-menu .col img{
+    width: 200px;
+    height: 120px;
+    display: block;
+}
+.mega-menu ul li .sub-menu p{
+    color: antiquewhite;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 14px;
+}
+/*Kayıt-Giriş Sayfası*/
+section {
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: .5s;
+}
+section.active {
+    background: gray;
+
+}
+section .container {
+    position:relative;
+    width: 800px;
+    height: 500px;
+    background-color: aliceblue;
+    box-shadow: 0 15px 50px rgb(0, 0, .1);
+    overflow:hidden;
+}
+section .container .user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+section .container .user .imgBox {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transform: .5;
+}
+section .container .user .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .container .user .formBox {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: .5s;
+}
+section .container .user .formBox h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #555;
+}
+section .container .user .formBox input {
+    width: 100%;
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: #333;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 14px;
+    margin: 8px 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+section .container .user .formBox input[type="submit"] {
+    max-width: 100%;
+    background: orange;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+section .container .user.sigupBox .formBox input[type="submit"] {
+    background: orange;
+}
+section .container .user.sigupBox .formBox input[type="submit"]:hover {
+    background: black;
+}
+section .container .user .formBox input[type="submit"]:hover {
+    background: black;
+    color: orange;
+}
+section .container .user .formBox .signup {
+    position: relative;
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+section .container .user .formBox .signup a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #557085;
+}
+section .container .user .formBox .signup a:hover {
+    color: orange;
+}
+section .container .sigupBox {
+    pointer-events: none;
+}
+section .container.active .sigupBox {
+    pointer-events: initial;
+}
+section .container .sigupBox .formBox {
+    top: 100%;
+}
+section .container.active .sigupBox .formBox {
+    top: 0%;
+}
+section .container .sigupBox .imgBox {
+    top: -100%;
+    transition: .5s;
+}
+section .container.active .sigupBox .imgBox {
+    top: 0;
+}
+section .container .siginBox .formBox {
+    top: 0;
+}
+section .container.active .siginBox .formBox {
+    top: 100%;
+}
+section .container .siginBox .imgBox {
+    top: 0;
+    transition: .5s;
+}
+section .container.active .siginBox .imgBox {
+    top: -100%;
+}
+@media (max-width:991px){
+    section .container{
+        max-width: 400px;
+    }
+    section .container .imgBox{
+        display: none;
+    }
+    section .container .user .formBox{
+        width: "100%";
+    }
+    section .container.active .signInBox .formBox{
+        top: -100%;
+    }
+}
+/*Footer*/
+footer p, .nav-link, .p-footer {
+    color: white !important;
+    text-align: left;
+}
+footer .nav-link:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+    .text {
+        text-align: center;
+    }
+}
+.resimler {
+    width: 100%;
+    justify-content: center;
+}
+.resimler img {
+    width: 168px;
+    height: 43px;
+    margin: 5px;
+}
+.main-div {
+    margin-top: 50px;
+    text-align: center;
+    line-height: 3;
+    color: white;
+}
+.main-div .fa-brands {
+    margin-inline: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+</style>
+
+</head>
+<body>
+     <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="index.html" style="font-size:xx-large">Trendyol</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" style="width: 400px ;" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" style="border-color:orange; color: black;" type="submit">Search</button>
+              </form>
+              <ul class="icon">
+                <li><a href="login.html" i class="bi bi-person"></i><span class="icon-text">Hesabım</span></a></li>
+                <li><a href="#" i class="bi bi-heart"></i><span class="icon-text">Favorilerim</span></a></li>
+                <li><a href="sepet.html" i class="bi bi-cart2"><span class="icon-text">Sepetim</a></li></span>
+                  <span class="basket-count">2</span>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--Navın altındaki kategoriler-->
+      <div class="wrapper">
+        <div class="mega-menu">
+          <ul class="bg-light">
+            <li><a href="#">Kadın</a>
+              <div class="sub-menu">
+                <div class="col">
+                  <img src="img/kadin1.jpg" alt="kadin1">
+                  <p>Giyim</p>
+                </div>
+                <div class="col">
+                  <img src="img/kadin2.jpg" alt="kadin1">
+                  <p>Ayakkabı</p>
+                </div>
+                <div class="col">
+                  <img src="img/kadin3.jpg" alt="kadin1">
+                  <p>Aksesuar</p>
+                </div>
+                <div class="col">
+                  <img src="img/kadin4.jpg" alt="kadin1">
+                  <p>Kozmetik</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Erkek</a>
+              <div class="sub-menu">
+                <div class="col">
+                  <img src="img/erkek1.jpg" alt="erkek1">
+                  <p>Giyim</p>
+                </div>
+                <div class="col">
+                  <img src="img/erkek2.jpg" alt="erkek2">
+                  <p>Ayakkabı</p>
+                </div>
+                <div class="col">
+                  <img src="img/erkek3.jpg" alt="erkek3">
+                  <p>Aksesuar</p>
+                </div>
+                <div class="col">
+                  <img src="img/erkek4.jpg" alt="erkek4">
+                  <p>Kozmetik</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Çocuk</a>
+              <div class="sub-menu">
+                <div class="col">
+                  <img src="img/cocuk1.jpg" alt="cocuk1">
+                  <p>Giyim</p>
+                </div>
+                <div class="col">
+                  <img src="img/cocuk2.jpg" alt="cocuk2">
+                  <p>Ayakkabı</p>
+                </div>
+                <div class="col">
+                  <img src="img/cocuk1.jpg" alt="cocuk3">
+                  <p>Aksesuar</p>
+                </div>
+                <div class="col">
+                  <img src="img/cocuk4.jpg" alt="cocuk4">
+                  <p>Oyuncaklar</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Ev ve Mobilya</a>
+              <div class="sub-menu">
+                <div class="col">
+                  <img src="img/ev1.jpg" alt="ev1">
+                  <p>Sofra&Mutfak</p>
+                </div>
+                <div class="col">
+                  <img src="img/ev2.jpg" alt="ev2">
+                  <p>Dekorasyon</p>
+                </div>
+                <div class="col">
+                  <img src="img/ev3.jpg" alt="ev3">
+                  <p>Bahçe</p>
+                </div>
+                <div class="col">
+                  <img src="img/ev4.jpg" alt="ev4">
+                  <p>Ev Tekstil</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Elektronik</a>
+              <div class="sub-menu">
+                <div class="col">
+                  <img src="img/elektronik1.jpg" alt="elektronik1">
+                  <p>Küçük Ev Aletleri</p>
+                </div>
+                <div class="col">
+                  <img src="img/elektronik2.jpg" alt="elektronik2">
+                  <p>Telefonlar</p>
+                </div>
+                <div class="col">
+                  <img src="img/elektronik3.jpg" alt="elektronik3">
+                  <p>Bilgisayarlar</p>
+                </div>
+                <div class="col">
+                  <img src="img/elektronik4.jpg" alt="elektronik4">
+                  <p>Kameralar</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Aksesuar</a>
+              <div class="sub-menu">
+                <div class="col">
+                  <img src="img/aksesuar1.jpg" alt="aksesuar1">
+                  <p>Saat</p>
+                </div>
+                <div class="col">
+                  <img src="img/aksesuar2.jpg" alt="aksesuar2">
+                  <p>Parfüm</p>
+                </div>
+                <div class="col">
+                  <img src="img/aksesuar3.jpg" alt="aksesuar3">
+                  <p>Çanta</p>
+                </div>
+                <div class="col">
+                  <img src="img/aksesuar4.jpg" alt="aksesuar4">
+                  <p>Takı</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Spor ve Outdoor</a>
+              <div class="sub-menu">
+                <div class="col">
+                  <img src="img/spor1.jpg" alt="spor1">
+                  <p>Kayak Aksesuarı</p>
+                </div>
+                <div class="col">
+                  <img src="img/spor2.jpg" alt="spor2">
+                  <p>Pilates Aksesuarı</p>
+                </div>
+                <div class="col">
+                  <img src="img/spor3.jpg" alt="spor3">
+                  <p>Kamp Aksesuarları</p>
+                </div>
+                <div class="col">
+                  <img src="img/spor4.jpg" alt="spor4">
+                  <p>Yüzme Aksesuarları</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Kayıt/Giriş Bölümü-->
+    <section>
+        <div class="container">
+            <div class="user siginBox">
+                <div class="imgBox"><img src="img/giris3.jpeg" alt=""></div>
+                <div class="formBox">
+                    <form>
+                        <h2>Giriş Yap</h2>
+                        <input type="text" placeholder="Kullanıcı Adı">
+                        <input type="password" placeholder="Şifre">
+                        <input type="submit" value="Giriş">
+                        <p class="signup">Hesabınız yok mu? Hemen <a href="#" onclick="toogleForm();">Kayıt Ol</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user sigupBox">
+                
+                <div class="formBox">
+                    <form>
+                        <h2>Üyelik Oluştur</h2>
+                        <input type="text" placeholder="Kullanıcı Adı">
+                        <input type="email" placeholder="E-Posta">
+                        <input type="password" placeholder="Şifre Oluştur">
+                        <input type="password" placeholder="Şifre Oluştur(tekrar)">
+                        <input type="submit" value="Kayıt Ol">
+                        <p class="signup">Hesabınız var mı? O zaman <a href="#" onclick="toogleForm();">Giriş Yap</a></p>
+                    </form>
+                </div>
+                <div class="imgBox"><img src="img/giris4.jpeg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+<script>
+    function toogleForm(){
+       section=document.querySelector('section');
+       container=document.querySelector('.container');
+       container.classList.toggle('active');
+       section.classList.toggle('active');
+    }
+</script>
+
+
+<!--Footer-->
+<footer class="container-fluid arkaplan bg-dark mt-2">
+    <div class="row">
+         <div class="col-lg-3 col-6">
+         <ul class="navbar-nav">
+             <li class="nav-item mb-2"> <a href="" class="nav-link fs-3">Trendyol</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Biz Kimiz</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Kariyer</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">İletişim</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Trendyol'da Satış Yap</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Kurumsal Hediye Çeki</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Güvenli Alışveriş</a></li>
+         </ul>
+         </div>
+         <div class="col-lg-3 col-6">
+         <ul class="navbar-nav">
+             <li class="nav-item mb-2"> <a href="" class="nav-link fs-3">About Us</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Who we are</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Careers</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Contact Us</a></li>
+         </ul>
+         </div>
+         <div class="col-lg-3 col-6">
+         <ul class="navbar-nav">
+             <li class="nav-item mb-2"> <a href="" class="nav-link fs-3">Kampanyalar</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Aktif Kampanyalar</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Elite Üyelik</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Hediye Fikirleri</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Trendyol Fırsatları</a></li>
+         </ul>
+         </div>
+         <div class="col-lg-3 col-6">
+         <ul class="navbar-nav">
+             <li class="nav-item mb-2"> <a href="" class="nav-link fs-3">Yardım</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Sıkça Sorulan Sorular</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Canlı Yardım</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">Nasıl iade edebilirim?</a></li>
+             <li class="nav-item mb-2"> <a href="" class="nav-link">İşlem Rehberi</a></li>
+         </ul>
+         </div>
+    </div>
+     
+     <div class="row">
+         <div class="dropdown mb-4">
+             <a class="btn text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <span><img src="img/world.png" alt=""></span>Türkçe
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                 <li><a class="dropdown-item" href="#">English</a></li>
+               </ul>
+         </div>
+     </div>
+     <div class="d-flex m-auto resimler">
+      <a href="">
+          <img src="img/app-store-2.svg" alt="">
+      </a>
+      <a href="">
+          <img src="img/google-play@3x.png" alt="">
+      </a>
+      <a href="">
+          <img src="img/huawei-app-gallery@3x.png" alt="">
+      </a>
+      </div>
+      <div class="main-div bg-dark">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+   
+        
+ </footer>
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

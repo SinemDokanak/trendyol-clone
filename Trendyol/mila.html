@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendyol Collection</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--FonAwesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  
+    <script src="https://kit.fontawesome.com/74469942f9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mila.css">
+
+</head>
+<body>
+  <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="index.html" style="font-size:xx-large">Trendyol</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" style="width: 400px ;" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" style="border-color:orange; color: black;" type="submit">Search</button>
+              </form>
+              <ul class="icon">
+                <li><a href="login.html" i class="bi bi-person"></i><span class="icon-text">Hesabım</span></a></li>
+                <li><a href="#" i class="bi bi-heart"></i><span class="icon-text">Favorilerim</span></a></li>
+                <li><a href="sepet.html" i class="bi bi-cart2"><span class="icon-text">Sepetim</a></li></span>
+                  <span class="basket-count">2</span>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--Navın altındaki kategoriler-->
+      <div class="wrapper">
+        <div class="mega-menu">
+          <ul class="bg-light">
+            <li><a href="#">Kadın</a>
+              <div class="sub-menu">
+                <div class="col">
+                  <img src="img/kadin1.jpg" alt="kadin1">
+                  <p>Giyim</p>
+                </div>
+                <div class="col">
+                  <img src="img/kadin2.jpg" alt="kadin1">
+                  <p>Ayakkabı</p>
+                </div>
+                <div class="col">
+                  <img src="img/kadin3.jpg" alt="kadin1">
+                  <p>Aksesuar</p>
+                </div>
+                <div class="col">
+                  <img src="img/kadin4.jpg" alt="kadin1">
+                  <p>Kozmetik</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Erkek</a>
+              <div class="sub-menu">
+                <div class="col">
+                  <img src="img/erkek1.jpg" alt="erkek1">
+                  <p>Giyim</p>
+                </div>
+                <div class="col">
+                  <img src="img/erkek2.jpg" alt="erkek2">
+                  <p>Ayakkabı</p>
+                </div>
+                <div class="col">
+                  <img src="img/erkek3.jpg" alt="erkek3">
+                  <p>Aksesuar</p>
+                </div>
+                <div class="col">
+                  <img src="img/erkek4.jpg" alt="erkek4">
+                  <p>Kozmetik</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Çocuk</a>
+              <div class="sub-menu">
+                <div class="col">
+                  <img src="img/cocuk1.jpg" alt="cocuk1">
+                  <p>Giyim</p>
+                </div>
+                <div class="col">
+                  <img src="img/cocuk2.jpg" alt="cocuk2">
+                  <p>Ayakkabı</p>
+                </div>
+                <div class="col">
+                  <img src="img/cocuk1.jpg" alt="cocuk3">
+                  <p>Aksesuar</p>
+                </div>
+                <div class="col">
+                  <img src="img/cocuk4.jpg" alt="cocuk4">
+                  <p>Oyuncaklar</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Ev ve Mobilya</a>
+              <div class="sub-menu">
+                <div class="col">
+                  <img src="img/ev1.jpg" alt="ev1">
+                  <p>Sofra&Mutfak</p>
+                </div>
+                <div class="col">
+                  <img src="img/ev2.jpg" alt="ev2">
+                  <p>Dekorasyon</p>
+                </div>
+                <div class="col">
+                  <img src="img/ev3.jpg" alt="ev3">
+                  <p>Bahçe</p>
+                </div>
+                <div class="col">
+                  <img src="img/ev4.jpg" alt="ev4">
+                  <p>Ev Tekstil</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Elektronik</a>
+              <div class="sub-menu">
+                <div class="col">
+                  <img src="img/elektronik1.jpg" alt="elektronik1">
+                  <p>Küçük Ev Aletleri</p>
+                </div>
+                <div class="col">
+                  <img src="img/elektronik2.jpg" alt="elektronik2">
+                  <p>Telefonlar</p>
+                </div>
+                <div class="col">
+                  <img src="img/elektronik3.jpg" alt="elektronik3">
+                  <p>Bilgisayarlar</p>
+                </div>
+                <div class="col">
+                  <img src="img/elektronik4.jpg" alt="elektronik4">
+                  <p>Kameralar</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Aksesuar</a>
+              <div class="sub-menu">
+                <div class="col">
+                  <img src="img/aksesuar1.jpg" alt="aksesuar1">
+                  <p>Saat</p>
+                </div>
+                <div class="col">
+                  <img src="img/aksesuar2.jpg" alt="aksesuar2">
+                  <p>Parfüm</p>
+                </div>
+                <div class="col">
+                  <img src="img/aksesuar3.jpg" alt="aksesuar3">
+                  <p>Çanta</p>
+                </div>
+                <div class="col">
+                  <img src="img/aksesuar4.jpg" alt="aksesuar4">
+                  <p>Takı</p>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Spor ve Outdoor</a>
+              <div class="sub-menu">
+                <div class="col">
+                  <img src="img/spor1.jpg" alt="spor1">
+                  <p>Kayak Aksesuarı</p>
+                </div>
+                <div class="col">
+                  <img src="img/spor2.jpg" alt="spor2">
+                  <p>Pilates Aksesuarı</p>
+                </div>
+                <div class="col">
+                  <img src="img/spor3.jpg" alt="spor3">
+                  <p>Kamp Aksesuarları</p>
+                </div>
+                <div class="col">
+                  <img src="img/spor4.jpg" alt="spor4">
+                  <p>Yüzme Aksesuarları</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+<!--Accordion Menü-->
+ <div class="container">
+  <div class="accordion accordion-flush col-md-2" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Kategoriler
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <a href="#">Elbise</a>
+        </div>
+        <div class="accordion-body">
+          <a href="#">Gömlek</a>
+        </div>
+        <div class="accordion-body">
+          <a href="#">Pantalon</a>
+        </div>
+        <div class="accordion-body">
+          <a href="#">Hırka</a>
+        </div>
+        <div class="accordion-body">
+          <a href="#">Kaban</a>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Cinsiyet
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label" for="flexCheckIndeterminate">
+            Kadın
+          </label>
+        </div>
+        <div class="accordion-body">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label" for="flexCheckIndeterminate">
+            Erkek
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Marka
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label" for="flexCheckIndeterminate">
+            Trendyol Milla
+          </label>
+        </div>
+        <div class="accordion-body">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label" for="flexCheckIndeterminate">
+            Trendyol Man
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Beden
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label" for="flexCheckIndeterminate">
+            XXS
+          </label>
+        </div>
+        <div class="accordion-body">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label" for="flexCheckIndeterminate">
+            XS
+          </label>
+        </div>
+        <div class="accordion-body">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label" for="flexCheckIndeterminate">
+            s
+          </label>
+        </div>
+        <div class="accordion-body">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label" for="flexCheckIndeterminate">
+            M
+          </label>
+        </div>
+        <div class="accordion-body">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label" for="flexCheckIndeterminate">
+            L
+          </label>
+        </div>
+        <div class="accordion-body">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+          <label class="form-check-label" for="flexCheckIndeterminate">
+            XL
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Fiyat
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              0₺ - 100₺
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              100₺ - 500₺
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+            <label class="form-check-label" for="exampleRadios3">
+              500₺ - 1000₺
+            </label>
+          </div>
+        </div>
+        </div>
+        <div class="reklam">
+          <img src="banka1.jpeg" alt="">
+        </div>
+        <div class="reklam">
+          <img src="banka2.jpeg" alt="">
+        </div>
+        <div class="reklam">
+          <img src="banka3.jpeg" alt="">
+        </div>
+    </div>
+    </div>
+    <div class="alisveris col-md-10">
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim1.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>Siyah Fitilli Basic Örme Atlet TWOSS22AL0042</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>140₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim2.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>Cep Detaylı Spor Biker Tayt TWOAW21TA0064</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>125₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim3.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>2'li Paket Basic Örme T-Shirt TWOSS20TS0141</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>120₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim4.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>Design Taş Vatkalı Tulum TWOSS21TU0233</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>180₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim5.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>Fitilli Örme Şort & Bermuda TWOSS21SR0621</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>145₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim6.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>2 Katmanlı Spor Şort TWOAW21SR0012</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>150₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim7.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>2Super Crop Örme Atlet TWOSS21AL0050</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>160₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim8.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>Puantiyeli Viskon Pijama Takımı THMSS20PT0306</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>100₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim9.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>Basic Örme T-shirt TWOAW20TS0096</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>110₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim10.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>Turuncu Fitilli Triko Bluz TWOSS21BZ0090</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>125₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim11.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>Beyaz Askılı Örme Crop Atlet TWOSS20AL0006</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>110₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim12.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>Çıtçıtlı Örme Body TWOSS20BD0044</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>100₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim13.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>Taş Fitilli Crop Örme Atlet TWOSS21AL0167</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>130₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim14.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>Cep Detaylı Şort & Bermuda TWOSS19WX0108</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>130₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim15.jpeg" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>Dik Yaka Örme T-Shirt TWOSS21TS1204</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>120₺</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <img src="mila-img/resim16.webp" alt="">
+          <div class="card-body">
+            <h5>TrendyolMilla</h5>
+            <p>Halter Yaka Elbise TWOSS21EL1538</p>
+            <a href="#" class="btn btn-primary" style="background-color:orange ;">Sepete Ekle</a>
+            <span>150₺</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--Footer-->
+    <footer class="container-fluid arkaplan bg-dark mt-2">
+      <div class="row">
+           <div class="col-lg-3 col-6">
+           <ul class="navbar-nav">
+               <li class="nav-item mb-2"> <a href="" class="nav-link fs-3">Trendyol</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Biz Kimiz</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Kariyer</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">İletişim</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Trendyol'da Satış Yap</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Kurumsal Hediye Çeki</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Güvenli Alışveriş</a></li>
+           </ul>
+           </div>
+           <div class="col-lg-3 col-6">
+           <ul class="navbar-nav">
+               <li class="nav-item mb-2"> <a href="" class="nav-link fs-3">About Us</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Who we are</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Careers</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Contact Us</a></li>
+           </ul>
+           </div>
+           <div class="col-lg-3 col-6">
+           <ul class="navbar-nav">
+               <li class="nav-item mb-2"> <a href="" class="nav-link fs-3">Kampanyalar</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Aktif Kampanyalar</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Elite Üyelik</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Hediye Fikirleri</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Trendyol Fırsatları</a></li>
+           </ul>
+           </div>
+           <div class="col-lg-3 col-6">
+           <ul class="navbar-nav">
+               <li class="nav-item mb-2"> <a href="" class="nav-link fs-3">Yardım</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Sıkça Sorulan Sorular</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Canlı Yardım</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">Nasıl iade edebilirim?</a></li>
+               <li class="nav-item mb-2"> <a href="" class="nav-link">İşlem Rehberi</a></li>
+           </ul>
+           </div>
+      </div>
+       
+       <div class="row">
+           <div class="dropdown mb-4">
+               <a class="btn text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   <span><img src="img/world.png" alt=""></span>Türkçe
+                 </a>
+                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                   <li><a class="dropdown-item" href="#">English</a></li>
+                 </ul>
+           </div>
+       </div>
+       <div class="d-flex m-auto resimler">
+        <a href="">
+            <img src="img/app-store-2.svg" alt="">
+        </a>
+        <a href="">
+            <img src="img/google-play@3x.png" alt="">
+        </a>
+        <a href="">
+            <img src="img/huawei-app-gallery@3x.png" alt="">
+        </a>
+        </div>
+        <div class="main-div bg-dark">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+     
+          
+   </footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

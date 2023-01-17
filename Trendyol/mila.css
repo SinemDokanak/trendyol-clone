@@ -1,0 +1,230 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    }
+body, html{
+    width: 100%;
+}
+
+.navbar {
+    height: 120px;
+    width: 80%;
+    margin-left: 10%;
+}
+.navbar-brand{
+    font-size: x-large;
+    font-weight: bolder;
+    
+}
+.icon{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    cursor: pointer;
+    color: black !important;
+}
+.icon li {
+    margin: 0 10px;
+}
+
+.icon-text {
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+  }
+  .icon li a{
+    text-decoration: none;
+    color: black;
+  }
+
+.basket-count {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 5px;
+}
+
+.basket-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Kategoriler*/
+.wrapper{
+    width: 100%;
+}
+
+.mega-menu{
+    width: 80px;
+    height: 60px;
+}
+
+.mega-menu ul{
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    text-align: center;
+    position: absolute;
+}
+.mega-menu ul li{
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0. 15;
+}
+.mega-menu ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+.mega-menu ul li .sub-menu{
+    position: absolute;
+    background: #2c2c2c;
+    width: 100%;
+    left: 0;
+    top: 24px;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 24px;
+    visibility: hidden;
+
+}
+.mega-menu ul li:hover {
+    background: #2c2c2c;
+    color: #ca914c;
+}
+.mega-menu ul li a:hover{
+    color: #ca914c;
+}
+.mega-menu ul li:hover .sub-menu{
+    z-index: 1;
+    visibility: visible;
+}
+
+.mega-menu ul li .sub-menu .col img{
+    width: 200px;
+    height: 120px;
+    display: block;
+}
+.mega-menu ul li .sub-menu p{
+    color: antiquewhite;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/*Acordion*/
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.accordion {
+  border: 1 solid black !important;
+}
+
+.accordion-body a{
+  text-decoration: none;
+  color: black;
+  margin-top: 2;
+}
+
+.alisveris {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 5px;
+    justify-content: center;
+}
+
+.reklam{
+  width: 100%;
+  height: 30%;
+  margin-top: 15px;
+  border: 1 solid black !important;
+  border-color: black !important;
+}
+.reklam img{
+  width: 100%;
+  margin-top: 10px;
+}
+
+/*Card*/
+.col {
+  width: 21% !important;
+  display: flex;
+  flex-wrap: wrap !important;
+ 
+}
+.card {
+    width: 250px;
+    margin: 10px 5px;
+    border: 1 solid orange;
+    margin-bottom: 30px;
+    text-align: start;
+}
+.card img {
+    width: 100%;
+    
+}
+.card h5 {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: start;
+
+}
+.card p {
+    font-family: sans-serif, cursive;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: start;
+}
+/*Footer*/
+footer p, .nav-link, .p-footer {
+    color: white !important;
+    text-align: left;
+}
+footer .nav-link:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+    .text {
+        text-align: center;
+    }
+}
+.resimler {
+    width: 100%;
+    justify-content: center;
+}
+.resimler img {
+    width: 168px;
+    height: 43px;
+    margin: 5px;
+}
+.main-div {
+    margin-top: 50px;
+    text-align: center;
+    line-height: 3;
+    color: white;
+}
+.main-div .fa-brands {
+    margin-inline: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 30px;
+}
+
